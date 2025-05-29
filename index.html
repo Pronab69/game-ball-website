@@ -8,62 +8,85 @@
   <link rel="stylesheet" href="venobox.min.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
-<style>
-  @keyframes ball-fall {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
 
-  .animate-ball-fall {
-    animation: ball-fall 4s ease-in-out infinite;
-  }
-</style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes ball-fall {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-ball-fall {
+      animation: ball-fall 4s ease-in-out infinite;
+
+    }
+
+    .venobox a {
+      overflow: hidden;
+    }
+
+    .venobox a:hover img {
+      transform: scale(1.2);
+      transition: all linear 0.3s;
+
+    }
+  </style>
 
 </head>
 
 <body>
   <div class="navbar bg-base-100 py-5 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white shadow-lg">
     <div class="navbar-start">
-      <a class=" text-xl "><img  src="images/unnamed (1).webp" alt=""></a>
+      <a class=" text-xl "><img src="images/unnamed (1).webp" alt=""></a>
 
     </div>
-    <div class="navbar-center">
-      <ul class=" gap-7 hidden md:flex justify-center items-center text-gray-800 font-bold 
+
+    <div class="navbar-end">
+      <ul class=" gap-5 hidden md:flex justify-center text-nowrap items-center text-gray-800 font-bold 
 ">
         <li><a class="hover:text-white" href="#">Home</a></li>
-        <li><a class="hover:text-white" href="#">About</a></li>
+        <li><a class="hover:text-white" href="#about">About</a></li>
         <li>
           <details class="dropdown">
             <summary class=" bg-white text-black px-2 py-1 rounded cursor-pointer">Explore
 
             </summary>
             <ul class="menu dropdown-content bg-purple-400 rounded-box z-1 w-52 shadow-sm">
-              <li><a class="hover:text-white" href="#">Screenshots</a></li>
-              <li><a class="hover:text-white" href="#">Benefits</a></li>
-              <li><a class="hover:text-white" href="#">Reviews </a></li>
-              <li><a class="hover:text-white" href="#"> Download Links </a></li>
-              <li> <a class="hover:text-white" href="#">Faq </a></li>
+              <li><a class="hover:text-white" href="#advantages">Benefits</a></li>
+              <li><a class="hover:text-white" href="#screnshot">Screenshots</a></li>
+
+
+              <li><a class="hover:text-white" href="#reviews">Reviews </a></li>
+              <li><a class="hover:text-white" href="#download"> Download Links </a></li>
+              <li> <a class="hover:text-white" href="#faq_sec">Faq </a></li>
+              <li><a class="hover:text-white" href="#contact">Contacts </a></li>
             </ul>
           </details>
         </li>
 
-        <li><a class="hover:text-white" href="#">Contacts </a></li>
 
+
+
+        <li><a class="hover:text-white" href="#">Privacy Policy
+
+
+          </a></li>
+
+        <li><a class="hover:text-white" href="#">User Agreement </a></li>
         <li><a class="hover:text-white" href="#">Data Processing Policy </a></li>
       </ul>
-    </div>
-    <div class="navbar-end">
-<div class="hidden md:flex"> <button class=" border-none mx-1  w-[100px] h-[30px]">
-        <a href="https://play.google.com/store/apps/details?id=ball.sort.color.water.puzzle.games"> <img
-            class=" w-full" src="images/google-play-badge-logo.png" alt=""></a>
-      </button>
-      <button class=" border-none mx-1 w-[100px] h-[30px]">
-        <a href="https://apps.apple.com/us/app/ball-sort-color-sort-puzzle/id6670187846"> <img
-            class="w-full" src="images//download-on-the-app-store-apple-logo.png" alt=""></a>
-      </button></div>
 
-     
+
       <div class="dropdown dropdown-end md:hidden">
         <div tabindex="0" role="button" class="btn btn-ghost ">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -74,318 +97,397 @@
 
 
 
-    <li><a class="hover:text-white" href="#">Home</a></li>
-        <li><a class="hover:text-white" href="#">About</a></li>
-        
-          
-              <li><a class="hover:text-white" href="#">Screenshots</a></li>
-              <li><a class="hover:text-white" href="#">Benefits</a></li>
-              <li><a class="hover:text-white" href="#">Reviews </a></li>
-              <li><a class="hover:text-white" href="#"> Download Links </a></li>
-              <li> <a class="hover:text-white" href="#">Faq </a></li>
-      
+          <li><a class="hover:text-white" href="#">Home</a></li>
+          <li><a class="hover:text-white" href="#about">About</a></li>
 
-        <li><a class="hover:text-white" href="#">Contacts </a></li>
 
-        <li><a class="hover:text-white" href="#">Data Processing Policy </a></li>
-         <div class="flex"> <button class=" border-none mx-1  w-[100px] h-[30px]">
-        <a href="https://play.google.com/store/apps/details?id=ball.sort.color.water.puzzle.games"> <img
-            class=" w-full" src="images/google-play-badge-logo.png" alt=""></a>
-      </button>
-      <button class=" border-none mx-1 w-[100px] h-[30px]">
-        <a href="https://apps.apple.com/us/app/ball-sort-color-sort-puzzle/id6670187846"> <img
-            class="w-full" src="images//download-on-the-app-store-apple-logo.png" alt=""></a>
-      </button></div>
+          <li><a class="hover:text-white" href="#advantages">Benefits</a></li>
+
+          <li><a class="hover:text-white" href="#screnshot">Screenshots</a></li>
+          <li><a class="hover:text-white" href="#reviews">Reviews </a></li>
+          <li><a class="hover:text-white" href="#download"> Download Links </a></li>
+          <li> <a class="hover:text-white" href="#faq_sec">Faq </a></li>
+
+
+          <li><a class="hover:text-white" href="#contact">Contacts </a></li>
+
+          <li><a class="hover:text-white" href="#">Data Processing Policy </a></li>
+          <li><a class="hover:text-white" href="#">Privacy Policy
+
+
+            </a></li>
+
+          <li><a class="hover:text-white" href="#">User Agreement </a></li>
+          <li><a class="hover:text-white" href="#">Data Processing Policy </a></li>
+          <div class="flex"> <button class=" border-none mx-1  w-[100px] h-[30px]">
+              <a href="https://play.google.com/store/apps/details?id=ball.sort.color.water.puzzle.games"> <img
+                  class=" w-full" src="images/google-play-badge-logo.png" alt=""></a>
+            </button>
+            <button class=" border-none mx-1 w-[100px] h-[30px]">
+              <a href="https://apps.apple.com/us/app/ball-sort-color-sort-puzzle/id6670187846"> <img class="w-full"
+                  src="images//download-on-the-app-store-apple-logo.png" alt=""></a>
+            </button></div>
         </ul>
-       
+
 
       </div>
     </div>
   </div>
-  <section class="relative h-[600px] bg-gradient-to-br from-purple-400 via-pink-500 to-yellow-300 flex items-center justify-center pt-20 overflow-hidden">
+  <section
+    class="relative h-[600px] bg-gradient-to-br from-purple-400 via-pink-500 to-yellow-300 flex items-center justify-center pt-20 overflow-hidden">
 
-  <!-- GAME TITLE -->
-  <div class="absolute top-10 text-center z-10">
-    <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Ball Sort: Color Puzzle</h1>
-    <p class="text-white text-lg md:text-xl drop-shadow-sm mt-2">Relaxing yet challenging brain game!</p>
-  </div>
 
-  <!-- TUBES + BALLS ANIMATION -->
-  <div class="flex gap-12 z-10 mt-28">
-    <!-- Tube 1 -->
-    <div class="w-16 h-40 bg-white/20 rounded-full border-2 border-white flex flex-col justify-end items-center gap-1 overflow-hidden relative">
-      <div class="w-10 h-10 bg-red-400 rounded-full animate-ball-fall delay-[0s]"></div>
-      <div class="w-10 h-10 bg-blue-400 rounded-full animate-ball-fall delay-[1.5s]"></div>
-      <div class="w-10 h-10 bg-yellow-300 rounded-full animate-ball-fall delay-[3s]"></div>
-    </div>
-    
-    <!-- Tube 2 -->
-    <div class="w-16 h-40 bg-white/20 rounded-full border-2 border-white flex flex-col justify-end items-center gap-1 overflow-hidden relative">
-      <div class="w-10 h-10 bg-green-400 rounded-full animate-ball-fall delay-[0.5s]"></div>
-      <div class="w-10 h-10 bg-red-400 rounded-full animate-ball-fall delay-[2s]"></div>
-      <div class="w-10 h-10 bg-blue-400 rounded-full animate-ball-fall delay-[3.5s]"></div>
+    <div class="absolute top-10 text-center z-10">
+      <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Ball Sort: Color Puzzle</h1>
+      <p class="text-white text-lg md:text-xl drop-shadow-sm mt-2">Relaxing yet challenging brain game!</p>
     </div>
 
-    <!-- Tube 3 -->
-    <div class="w-16 h-40 bg-white/20 rounded-full border-2 border-white flex flex-col justify-end items-center gap-1 overflow-hidden relative">
-      <div class="w-10 h-10 bg-yellow-300 rounded-full animate-ball-fall delay-[1s]"></div>
-      <div class="w-10 h-10 bg-green-400 rounded-full animate-ball-fall delay-[2.5s]"></div>
-      <div class="w-10 h-10 bg-red-400 rounded-full animate-ball-fall delay-[4s]"></div>
-    </div>
-  </div>
 
-  <!-- DOWNLOAD BUTTONS -->
-  <div class="absolute bottom-10 z-10 flex justify-center gap-4">
-    <a href="https://play.google.com/store/apps/details?id=ball.sort.color.water.puzzle.games" class="w-[170px] h-[30px]">
-      <img src="images/google-play-badge-logo.png" alt="Download on Google Play" class="w-full">
-    </a>
-    <a href="https://apps.apple.com/us/app/ball-sort-color-sort-puzzle/id6670187846" class="w-[170px] h-[30px]">
-      <img src="images/download-on-the-app-store-apple-logo.png" alt="Download on the App Store" class="w-full">
-    </a>
-  </div>
-</section>
+    <div class="flex gap-12 z-10 mt-5">
 
-
-
-<main class="bg-purple-300 py-5 px-3">
-<section id="about" class="bg-gradient-to-r from-pink-50 to-yellow-50 py-16 px-4 md:px-10">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-purple-700 mb-6">
-      Ball Sort: Color Puzzle — Calm Your Mind by Sorting Balls!
-    </h2>
-    <p class="text-gray-700 text-lg md:text-xl leading-relaxed">
-      Dive into a colorful, mesmerizing world of logic, relaxation, and satisfaction with
-      <strong class="text-purple-600">Ball Sort: Color Puzzle</strong> — a mobile puzzle game that
-      combines simplicity, aesthetics, and mental stimulation.
-      <br /><br />
-      Your objective is crystal clear yet deeply engaging: sort the colored balls into tubes so that
-      each tube contains balls of only one color. At first, the challenge may seem easy — but as you
-      progress 
-      progress, the game surprises you with increasingly complex setups and unexpected combinations.
-Each level presents a new challenge for your mind. You'll need to think several steps ahead, remain calm, and find optimal sorting strategies while maintaining balance. This harmony is the heart of the game. Ball Sort is not just a time-killer — it's a tool for sharpening focus, patience, and logical thinking.
-Designed with user experience in mind, the controls are so intuitive that even a child can play. The visual style is soft and pleasant, while the smooth ball animations enhance the overall enjoyment. Gentle background music and sound effects create a meditative atmosphere — you’re not just playing, you’re relaxing and entering a state of flow.
-
-    </p>
-<h2 class="py-4 font-bold md:text-2xl text-purple-600">Ball Sort:</h2>
-    <p> Color Puzzle is your ideal companion — whether you're traveling, relaxing at home, winding down before sleep, or taking a break at work. It requires no internet connection, doesn’t rush you, and avoids intrusive ads — just you, your thoughts, and the colorful balls waiting to be sorted.
-Join millions of players around the world and discover the joy of solving complex problems with simple moves. Ball Sort is more than just a game — it’s a moment of peace.</p>
-  </div>
-
-   <div class="grid grid-cols-2 space-y-2 md:grid-cols-4  max-w-4xl mx-auto mt-10">
-      <img src="images/unnamed1.webp" alt="Game Screenshot 1" class="rounded-lg shadow-lg max-h-96">
-      <img src="images/unnamed2.webp" alt="Game Screenshot 2" class="rounded-lg shadow-lg max-h-96">
-      <img src="images/unnamed.webp" alt="Game Screenshot 2" class="rounded-lg shadow-lg max-h-96">
-      <img src="images/unnamed2.webp" alt="Game Screenshot 2" class="rounded-lg shadow-lg max-h-96">
-
-    </div>
-</section>
-<section id="advantages" class="bg-white py-16 px-6 md:px-12">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-purple-700 mb-10">
-      Why Do Players Choose Ball Sort?
-    </h2>
-    <ul class="space-y-6 text-gray-700 text-xl md:text-2xl font-semibold max-w-xl mx-auto">
-      <li class="flex items-center space-x-4">
-        <span class="text-3xl">🧠</span>
-        <span>Trains thinking and concentration</span>
-      </li>
-      <li class="flex items-center space-x-4">
-        <span class="text-3xl">🎨</span>
-        <span>Bright, minimalist, and intuitive interface</span>
-      </li>
-      <li class="flex items-center space-x-4">
-        <span class="text-3xl">🧩</span>
-        <span>Endless levels</span>
-      </li>
-      <li class="flex items-center space-x-4">
-        <span class="text-3xl">💡</span>
-        <span>Hints for tricky puzzles</span>
-      </li>
-      <li class="flex items-center space-x-4">
-        <span class="text-3xl">🔊</span>
-        <span>Soothing music and sound effects</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="mt-7 grid grid-cols-2 md:grid-cols-3 gap-4 ">
-  <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno-1.webp"><img class="rounded-md" src="images/veno-1.webp"></a>
-  <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno.webp"><img class="" src="images/veno.webp"></a>
-  <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno2.webp"><img class="rounded-md" src="images/veno2.webp"></a>
-  <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno3.webp"><img class="rounded-md" src="images/veno3.webp"></a>
-  <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno4.webp"><img class="rounded-md" src="images/veno4.webp"></a>
-  <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno5.webp"><img class="rounded-md" src="images/veno5.webp"></a>
-
-</section>
-
-<section id="reviews" class="bg-gradient-to-r from-purple-100 via-pink-100 to-yellow-100 py-16 px-6 md:px-12">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-purple-800 mb-12">
-      What Our Players Are Saying
-    </h2>
-    <div class="space-y-10">
-
-      <div class="bg-white rounded-lg p-6 shadow-md max-w-xl mx-auto">
-        <div class="flex items-center justify-center mb-3 text-yellow-400 text-xl">
-          ⭐⭐⭐⭐⭐
-        </div>
-        <p class="text-gray-800 italic text-lg mb-4">“Can’t put it down!”</p>
-        <p class="font-semibold text-purple-700">— Alex M.</p>
-      </div>
-
-      
-      <div class="bg-white rounded-lg p-6 shadow-md max-w-xl mx-auto">
-        <div class="flex items-center justify-center mb-3 text-yellow-400 text-xl">
-          ⭐⭐⭐⭐⭐
-        </div>
-        <p class="text-gray-800 italic text-lg mb-4">“Perfect game to relax with.”</p>
-        <p class="font-semibold text-purple-700">— Priya S.</p>
+      <div
+        class="w-16 h-40 bg-white/20 rounded-full border-2 border-white flex flex-col justify-end items-center gap-1 overflow-hidden relative">
+        <div class="w-10 h-10 bg-red-400 rounded-full animate-ball-fall delay-[0s]"></div>
+        <div class="w-10 h-10 bg-blue-400 rounded-full animate-ball-fall delay-[1.5s]"></div>
+        <div class="w-10 h-10 bg-yellow-300 rounded-full animate-ball-fall delay-[3s]"></div>
       </div>
 
 
-      <div class="bg-white rounded-lg p-6 shadow-md max-w-xl mx-auto">
-        <div class="flex items-center justify-center mb-3 text-yellow-400 text-xl">
-          ⭐⭐⭐⭐⭐
-        </div>
-        <p class="text-gray-800 italic text-lg mb-4">“So addictive — I want to perfect every level!”</p>
-        <p class="font-semibold text-purple-700">— John D.</p>
+      <div
+        class="w-16 h-40 bg-white/20 rounded-full border-2 border-white flex flex-col justify-end items-center gap-1 overflow-hidden relative">
+        <div class="w-10 h-10 bg-green-400 rounded-full animate-ball-fall delay-[0.5s]"></div>
+        <div class="w-10 h-10 bg-red-400 rounded-full animate-ball-fall delay-[2s]"></div>
+        <div class="w-10 h-10 bg-blue-400 rounded-full animate-ball-fall delay-[3.5s]"></div>
+      </div>
+
+
+      <div
+        class="w-16 h-40 bg-white/20 rounded-full border-2 border-white flex flex-col justify-end items-center gap-1 overflow-hidden relative">
+        <div class="w-10 h-10 bg-yellow-300 rounded-full animate-ball-fall delay-[1s]"></div>
+        <div class="w-10 h-10 bg-green-400 rounded-full animate-ball-fall delay-[2.5s]"></div>
+        <div class="w-10 h-10 bg-red-400 rounded-full animate-ball-fall delay-[4s]"></div>
       </div>
     </div>
-  </div>
-</section>
-<section id="download" class="bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 py-16 px-6 md:px-12">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-purple-800 mb-10">
-      Download Ball Sort: Color Puzzle
-    </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-     
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center">
-        <img src="images/Android_robot.svg" alt="Android" class="w-16 h-16 mb-4" />
-        <p class="text-xl font-semibold text-purple-700 mb-4">Download on Android</p>
-        <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full text-lg transition">
-          Get it on Google Play
-        </a>
-      </div>
 
 
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center">
-        <img src="images/Apple_logo_black.svg" alt="iOS" class="w-14 h-14 mb-4" />
-        <p class="text-xl font-semibold text-purple-700 mb-4">Download on iOS</p>
-        <a href="#" class="bg-black hover:bg-gray-900 text-white px-5 py-2 rounded-full text-lg transition">
-          Get it on the App Store
-        </a>
-      </div>
+    <div class="absolute bottom-10 z-10 flex justify-center gap-4">
+      <a href="https://play.google.com/store/apps/details?id=ball.sort.color.water.puzzle.games"
+        class="w-[170px] h-[30px]">
+        <img src="images/google-play-badge-logo.png" alt="Download on Google Play" class="w-full">
+      </a>
+      <a href="https://apps.apple.com/us/app/ball-sort-color-sort-puzzle/id6670187846" class="w-[170px] h-[30px]">
+        <img src="images/download-on-the-app-store-apple-logo.png" alt="Download on the App Store" class="w-full">
+      </a>
     </div>
-  </div>
-</section>
-<section class="py-4 mx-auto max-w-4xl"><div class="collapse collapse-arrow  bg-base-100 border border-base-300">
-  <input type="radio" name="my-accordion-2" checked="checked" />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div>
-
-<div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div>
-<div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div><div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div><div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div><div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div><div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div><div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div><div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div><div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div><div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div><div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
-  <input type="radio" name="my-accordion-2"  />
-  <div class="collapse-title font-bold">How do I create an account ❓ </div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div>
+  </section>
 
 
-</section>
 
-<section id="contact" class="bg-gradient-to-br from-purple-100 via-pink-50 to-yellow-50 py-16 px-6 md:px-12">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-10">Get in Touch</h2>
+  <main class="bg-purple-300 py-5 px-3">
+    <section id="about" class="bg-gradient-to-r from-pink-50 to-yellow-50 py-16 px-4 md:px-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-purple-700 mb-6">
+          Ball Sort: Color Puzzle — Calm Your Mind by Sorting Balls!
+        </h2>
+        <p class="text-gray-700 text-lg md:text-xl leading-relaxed">
+          Dive into a colorful, mesmerizing world of logic, relaxation, and satisfaction with
+          <strong class="text-purple-600">Ball Sort: Color Puzzle</strong> — a mobile puzzle game that
+          combines simplicity, aesthetics, and mental stimulation.
+          <br /><br />
+          Your objective is crystal clear yet deeply engaging: sort the colored balls into tubes so that
+          each tube contains balls of only one color. At first, the challenge may seem easy — but as you
+          progress
+          progress, the game surprises you with increasingly complex setups and unexpected combinations.
+          Each level presents a new challenge for your mind. You'll need to think several steps ahead, remain calm, and
+          find optimal sorting strategies while maintaining balance. This harmony is the heart of the game. Ball Sort is
+          not just a time-killer — it's a tool for sharpening focus, patience, and logical thinking.
+          Designed with user experience in mind, the controls are so intuitive that even a child can play. The visual
+          style is soft and pleasant, while the smooth ball animations enhance the overall enjoyment. Gentle background
+          music and sound effects create a meditative atmosphere — you’re not just playing, you’re relaxing and entering
+          a state of flow.
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-      <form class="bg-white p-6 rounded-2xl shadow-lg space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full p-3 border border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300" required />
-        <input type="email" placeholder="Your Email" class="w-full p-3 border border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300" required />
-        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300" required></textarea>
-        <button type="submit" class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-full transition">
-          Send Message
-        </button>
-      </form>
-
-      <div class="bg-white p-6 rounded-2xl shadow-lg text-purple-800 space-y-4 text-lg">
-        <p><strong>Email:</strong> yourname@gmail.com</p>
-        <p><strong>Phone:</strong> +380 (44) 333-78-90</p>
-        <p><strong>Legal Address:</strong><br />
-          Ukraine, Kyiv,<br />
-          Mira St., 12, Office 302
         </p>
-        <p><strong>Domain:</strong> domain.com</p>
+        <h2 class="py-4 font-bold md:text-2xl text-purple-600">Ball Sort:</h2>
+        <p> Color Puzzle is your ideal companion — whether you're traveling, relaxing at home, winding down before
+          sleep, or taking a break at work. It requires no internet connection, doesn’t rush you, and avoids intrusive
+          ads — just you, your thoughts, and the colorful balls waiting to be sorted.
+          Join millions of players around the world and discover the joy of solving complex problems with simple moves.
+          Ball Sort is more than just a game — it’s a moment of peace.</p>
       </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 place-items-center mt-6 gap-6 ">
+        <img src="images/unnamed1.webp" alt="Game Screenshot 1" class="rounded-lg shadow-lg max-h-96">
+        <img src="images/unnamed2.webp" alt="Game Screenshot 2" class="rounded-lg  shadow-lg max-h-96">
+        <img src="images/unnamed.webp" alt="Game Screenshot 2" class="rounded-lg  shadow-lg max-h-96">
+        <img src="images/unnamed2.webp" alt="Game Screenshot 2" class="rounded-lg  shadow-lg max-h-96">
+
+      </div>
+    </section>
+    <section id="advantages" class="bg-white py-16 px-6 md:px-12">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-purple-700 mb-10">
+          Why Do Players Choose Ball Sort?
+        </h2>
+        <ul class="space-y-6 text-gray-700 text-xl md:text-2xl font-semibold max-w-xl mx-auto">
+          <li class="flex items-center space-x-4">
+            <span class="text-3xl">🧠</span>
+            <span>Trains thinking and concentration</span>
+          </li>
+          <li class="flex items-center space-x-4">
+            <span class="text-3xl">🎨</span>
+            <span>Bright, minimalist, and intuitive interface</span>
+          </li>
+          <li class="flex items-center space-x-4">
+            <span class="text-3xl">🧩</span>
+            <span>Endless levels</span>
+          </li>
+          <li class="flex items-center space-x-4">
+            <span class="text-3xl">💡</span>
+            <span>Hints for tricky puzzles</span>
+          </li>
+          <li class="flex items-center space-x-4">
+            <span class="text-3xl">🔊</span>
+            <span>Soothing music and sound effects</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="screnshot" class="mt-7 grid grid-cols-2 venobox md:grid-cols-3 gap-4 ">
+      <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno-1.webp"><img class="rounded-md"
+          src="images/veno-1.webp"></a>
+      <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno.webp"><img class="rounded-md"
+          src="images/veno.webp"></a>
+      <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno2.webp"><img class="rounded-md"
+          src="images/veno2.webp"></a>
+      <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno3.webp"><img class="rounded-md"
+          src="images/veno3.webp"></a>
+      <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno4.webp"><img class="rounded-md"
+          src="images/veno4.webp"></a>
+      <a class="my-image-links rounded-md" data-gall="gallery01" href="images/veno5.webp"><img class="rounded-md"
+          src="images/veno5.webp"></a>
+
+    </section>
+
+    <section id="reviews" class="bg-gradient-to-r from-purple-100 via-pink-100 mt-8 to-yellow-100 py-16 px-6 md:px-12">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-purple-800 mb-12">
+          What Our Players Are Saying
+        </h2>
+        <div class="space-y-10">
+
+          <div class="bg-white rounded-lg p-6 shadow-md max-w-xl mx-auto">
+            <div class="flex items-center justify-center mb-3 text-yellow-400 text-xl">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p class="text-gray-800 italic text-lg mb-4">“Can’t put it down!”</p>
+            <p class="font-semibold text-purple-700">— Alex M.</p>
+          </div>
+
+
+          <div class="bg-white rounded-lg p-6 shadow-md max-w-xl mx-auto">
+            <div class="flex items-center justify-center mb-3 text-yellow-400 text-xl">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p class="text-gray-800 italic text-lg mb-4">“Perfect game to relax with.”</p>
+            <p class="font-semibold text-purple-700">— Priya S.</p>
+          </div>
+
+
+          <div class="bg-white rounded-lg p-6 shadow-md max-w-xl mx-auto">
+            <div class="flex items-center justify-center mb-3 text-yellow-400 text-xl">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p class="text-gray-800 italic text-lg mb-4">“So addictive — I want to perfect every level!”</p>
+            <p class="font-semibold text-purple-700">— John D.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="download" class="bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 py-16 px-6 md:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-purple-800 mb-10">
+          Download Ball Sort: Color Puzzle
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center">
+            <img src="images/Android_robot.svg" alt="Android" class="w-16 h-16 mb-4" />
+            <p class="text-xl font-semibold text-purple-700 mb-4">Download on Android</p>
+            <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full text-lg transition">
+              Get it on Google Play
+            </a>
+          </div>
+
+
+          <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center">
+            <img src="images/Apple_logo_black.svg" alt="iOS" class="w-14 h-14 mb-4" />
+            <p class="text-xl font-semibold text-purple-700 mb-4">Download on iOS</p>
+            <a href="#" class="bg-black hover:bg-gray-900 text-white px-5 py-2 rounded-full text-lg transition">
+              Get it on the App Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq_sec" class="py-4 mx-auto max-w-4xl">
+      <div class="collapse collapse-arrow  bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-bold"> ❓ Is the game free?
+
+        </div>
+        <div class="collapse-content text-sm"> Yes, Ball Sort: Color Puzzle is completely free. All core features are
+          available without payment. The game includes in-game ads that help support the project. However, you can
+          remove ads via a one-time in-app purchase.</div>
+      </div>
+
+   
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ Do I need an internet connection to play? </div>
+        <div class="collapse-content text-sm"> No, an internet connection is not required. Ball Sort works fully
+          offline. You can play
+          anywhere — on the subway, on a plane, or on vacation without Wi-Fi. Your data is saved locally on your device.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ Is there a difficulty level in the game?</div>
+        <div class="collapse-content text-sm"> The difficulty increases dynamically. Early levels are simple, helping
+          you understand the mechanics. As you progress, the puzzles become more complex and strategic, requiring
+          planning and patience.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ What is the recommended age for the game? </div>
+        <div class="collapse-content text-sm"> The recommended age is 4 and up. The game contains no violence, has no
+          inappropriate content, and encourages logical thinking — making it suitable for both children and adults.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ Can I play on a tablet? </div>
+        <div class="collapse-content text-sm"> Yes, absolutely. The game is optimized for various screen sizes — from
+          smartphones to tablets, and even emulators on desktop. The interface scales automatically.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ Are there in-app purchases? </div>
+        <div class="collapse-content text-sm">?
+          Yes, but they’re optional. You can purchase ad removal and extra hints. Everything else is fully available for
+          free and without restrictions.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ What devices are supported? </div>
+        <div class="collapse-content text-sm">Supported devices include Android (version 5.0 and above) and iOS (version
+          12.0 and above). You can download the game from Google Play or the App Store. Links are provided in the
+          sections above.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ Can I reset my progress and start over?
+        </div>
+        <div class="collapse-content text-sm"> Yes, you can reset your progress in the game settings. Multiple save
+          slots are also available if you want to try different strategies or let a child play on your device.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ Is there music/sound, and can I turn it off?
+        </div>
+        <div class="collapse-content text-sm"> Yes, the game includes pleasant background music and sound effects. If
+          you prefer to play in silence, you can easily turn off the sound in the settings menu.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ What should I do if the game won’t start or crashes?
+ </div>
+        <div class="collapse-content text-sm">
+           Try restarting your device and ensuring that the latest version of the game is installed. If the issue persists, please contact our support team:
+ <br>📩 support@workstep.agency  <br>
+ We’ll do our best to assist you as quickly as possible.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ Can I play if I have color blindness? </div>
+        <div class="collapse-content text-sm"> Yes. The ball colors are chosen with contrast in mind, and we test the game for accessibility. We’re also planning to introduce additional colorblind modes in upcoming updates.</div>
+      </div>
+   <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-bold">❓ Is the game suitable for relaxation? </div>
+        <div class="collapse-content text-sm"> Absolutely. Many players report that Ball Sort helps them unwind, regain focus, de-stress, and even fall asleep. The game is designed to be pressure-free — just a light mental challenge and the joy of sorting.</div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="bg-gradient-to-br from-purple-100 via-pink-50 to-yellow-50 py-16 px-6 md:px-12">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-10">Get in Touch</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <form class="bg-white p-6 rounded-2xl shadow-lg space-y-4">
+            <input type="text" placeholder="Your Name"
+              class="w-full p-3 border border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300"
+              required />
+            <input type="email" placeholder="Your Email"
+              class="w-full p-3 border border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300"
+              required />
+            <textarea placeholder="Your Message" rows="5"
+              class="w-full p-3 border border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300"
+              required></textarea>
+            <button type="submit"
+              class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-full transition">
+              Send Message
+            </button>
+          </form>
+
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-purple-800 space-y-4 text-lg">
+            <p><strong>Email:</strong> yourname@gmail.com</p>
+            <p><strong>Phone:</strong> +380 (44) 333-78-90</p>
+            <p><strong>Legal Address:</strong><br />
+              Ukraine, Kyiv,<br />
+              Mira St., 12, Office 302
+            </p>
+            <p><strong>Domain:</strong> domain.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="bg-gray-100 text-gray-700 p-6 text-sm">
+    <div class="max-w-5xl mx-auto space-y-4">
+      <h2 class="text-lg font-semibold text-purple-600">Legal Disclaimer</h2>
+      <p>
+        Individual Entrepreneur <strong>[First Name Last Name]</strong>, Taxpayer Identification Number (TIN):
+        <strong>4210876359</strong>, registered in the Unified State Register of Individual Entrepreneurs under No.
+        <strong>312345678912345</strong> dated <strong>March 15, 2025</strong>, has entered into Agreement No.
+        <strong>453-WK</strong> dated <strong>March 15, 2025</strong>, with the mobile app development company
+        <strong>“Ball Sort: Color Puzzle”</strong> — <strong>LLC “Company Name”</strong> — for the provision of
+        promotional services for the application.
+      </p>
+      <p>
+        As part of this cooperation, the individual entrepreneur rents advertising accounts from the agency <strong>Work
+          Step</strong>, which also provides technical support for advertising campaigns.
+      </p>
+      <p class="text-red-600 font-medium">
+        Important Notice:
+      </p>
+      <p>
+        All rights to the game <strong>Ball Sort: Color Puzzle</strong> belong exclusively to its developer. This
+        website is created for <strong>promotional purposes only</strong> and is <strong>not the official website of the
+          game developer</strong>.
+      </p>
     </div>
-  </div>
-</section>
+  </footer>
 
-</main>
-<footer class="bg-gray-100 text-gray-700 p-6 text-sm">
-  <div class="max-w-5xl mx-auto space-y-4">
-    <h2 class="text-lg font-semibold text-purple-600">Legal Disclaimer</h2>
-    <p>
-      Individual Entrepreneur <strong>[First Name Last Name]</strong>, Taxpayer Identification Number (TIN): <strong>4210876359</strong>, registered in the Unified State Register of Individual Entrepreneurs under No. <strong>312345678912345</strong> dated <strong>March 15, 2025</strong>, has entered into Agreement No. <strong>453-WK</strong> dated <strong>March 15, 2025</strong>, with the mobile app development company <strong>“Ball Sort: Color Puzzle”</strong> — <strong>LLC “Company Name”</strong> — for the provision of promotional services for the application.
-    </p>
-    <p>
-      As part of this cooperation, the individual entrepreneur rents advertising accounts from the agency <strong>Work Step</strong>, which also provides technical support for advertising campaigns.
-    </p>
-    <p class="text-red-600 font-medium">
-      Important Notice:
-    </p>
-    <p>
-      All rights to the game <strong>Ball Sort: Color Puzzle</strong> belong exclusively to its developer. This website is created for <strong>promotional purposes only</strong> and is <strong>not the official website of the game developer</strong>.
-    </p>
-  </div>
-</footer>
-
-<script src="venobox.min.js"></script>
-<script src="custom.js"></script>
+  <script src="venobox.min.js"></script>
+  <script src="custom.js"></script>
 </body>
 
 </html>
