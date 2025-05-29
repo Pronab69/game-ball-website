@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="venobox.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes ball-fall {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-ball-fall {
+      animation: ball-fall 4s ease-in-out infinite;
+
+    }
+
+    .venobox a {
+      overflow: hidden;
+    }
+
+    .venobox a:hover img {
+      transform: scale(1.2);
+      transition: all linear 0.3s;
+
+    }
+    .active{
+      color: #fff;
+    }
+    .active1{background: rgb(126, 91, 126);}
+
+  </style>
+
+</head>
+
+<body>
+  <div class="navbar fixed top-0 z-40 bg-base-100 py-5 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white shadow-lg">
+    <div class="navbar-start">
+      <a class=" text-xl "><img src="images/unnamed (1).webp" alt=""></a>
+
+    </div>
+
+    <div class="navbar-end">
+      <ul class=" gap-5 hidden md:flex justify-center text-nowrap items-center text-gray-800 font-bold 
+">
+        <li><a class="hover:text-white " href="index.html">Home</a></li>
+       
+      
+
+
+
+
+        <li><a class="hover:text-white " href="privacy.html">Privacy Policy
+
+
+          </a></li>
+
+        <li><a class="hover:text-white " href="agreement.html">Terms of Service </a></li>
+        <li><a class="hover:text-white active" href="#">Data Processing Policy </a></li>
+      </ul>
+
+
+      <div class="dropdown dropdown-end md:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+        </div>
+        <ul tabindex="0" class="menu   dropdown-content bg-purple-400   space-y-4 rounded-box z-1 mt-3 w-3xs
+ p-2 shadow">
+
+
+
+          <li><a class="hover:text-white " href="index.html">Home</a></li>
+        
+<hr>
+        
+          <li><a class="hover:text-white  " href="privacy.html">Privacy Policy
+
+
+            </a></li>
+
+          <li><a class="hover:text-white " href="agreement.html">Terms of Service </a></li>
+          <li><a class="hover:text-white active1" href="#">Data Processing Policy </a></li>
+         
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
+  <section
+    class="relative mt-26  h-[600px] bg-gradient-to-br from-purple-400 via-pink-500 to-yellow-300 flex items-center justify-center  overflow-hidden">
+
+
+    <div class="absolute top-10 text-center z-10">
+      <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Ball Sort: Color Puzzle</h1>
+      <p class="text-white text-lg md:text-xl drop-shadow-sm mt-2">Relaxing yet challenging brain game!</p>
+    </div>
+
+
+    <div class="flex gap-12 z-10 mt-5">
+
+      <div
+        class="w-16 h-40 bg-white/20 rounded-full border-2 border-white flex flex-col justify-end items-center gap-1 overflow-hidden relative">
+        <div class="w-10 h-10 bg-red-400 rounded-full animate-ball-fall delay-[0s]"></div>
+        <div class="w-10 h-10 bg-blue-400 rounded-full animate-ball-fall delay-[1.5s]"></div>
+        <div class="w-10 h-10 bg-yellow-300 rounded-full animate-ball-fall delay-[3s]"></div>
+      </div>
+
+
+      <div
+        class="w-16 h-40 bg-white/20 rounded-full border-2 border-white flex flex-col justify-end items-center gap-1 overflow-hidden relative">
+        <div class="w-10 h-10 bg-green-400 rounded-full animate-ball-fall delay-[0.5s]"></div>
+        <div class="w-10 h-10 bg-red-400 rounded-full animate-ball-fall delay-[2s]"></div>
+        <div class="w-10 h-10 bg-blue-400 rounded-full animate-ball-fall delay-[3.5s]"></div>
+      </div>
+
+
+      <div
+        class="w-16 h-40 bg-white/20 rounded-full border-2 border-white flex flex-col justify-end items-center gap-1 overflow-hidden relative">
+        <div class="w-10 h-10 bg-yellow-300 rounded-full animate-ball-fall delay-[1s]"></div>
+        <div class="w-10 h-10 bg-green-400 rounded-full animate-ball-fall delay-[2.5s]"></div>
+        <div class="w-10 h-10 bg-red-400 rounded-full animate-ball-fall delay-[4s]"></div>
+      </div>
+    </div>
+
+
+    <div class="absolute bottom-10 z-10 flex justify-center gap-4">
+      <a href="https://play.google.com/store/apps/details?id=ball.sort.color.water.puzzle.games"
+        class="w-[170px] h-[30px]">
+        <img src="images/google-play-badge-logo.png" alt="Download on Google Play" class="w-full">
+      </a>
+      <a href="https://apps.apple.com/us/app/ball-sort-color-sort-puzzle/id6670187846" class="w-[170px] h-[30px]">
+        <img src="images/download-on-the-app-store-apple-logo.png" alt="Download on the App Store" class="w-full">
+      </a>
+    </div>
+  </section>
+
+<main class="bg-gradient-to-r from-purple-100 via-pink-100 to-yellow-100">
+    <section class="max-w-4xl mx-auto px-4 py-10">
+         <h2 class="text-3xl font-bold mb-6 text-center text-purple-600">Data Processing Policy</h2>
+  <p class="mb-4 text-center">Effective Date: March 15, 2025</p>
+
+  <p class="mb-4">
+    This Data Processing Policy outlines how personal data is collected, processed, and protected in relation to the mobile game “Ball Sort: Color Puzzle” and this promotional website. We are committed to transparency and protecting your privacy.
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-600">1. Data Controller</h3>
+  <p class="mb-4">
+    The data controller is Individual Entrepreneur [First Name Last Name], TIN 4210876359, operating under agreement No. 453-WK with the developer LLC “Company Name.”
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-600">2. Categories of Data Collected</h3>
+  <p class="mb-4">
+    We may collect:
+  </p>
+  <ul class="list-disc list-inside mb-4">
+    <li>Name and email address (via contact form)</li>
+    <li>Device and usage data (via analytics tools)</li>
+    <li>IP address and browser information</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-600">3. Purpose of Data Collection</h3>
+  <p class="mb-4">
+    Data is collected to:
+  </p>
+  <ul class="list-disc list-inside mb-4">
+    <li>Respond to support requests</li>
+    <li>Analyze website performance and improve user experience</li>
+    <li>Manage and optimize advertising campaigns</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-600">4. Legal Basis</h3>
+  <p class="mb-4">
+    Processing is based on user consent, contractual necessity, and legitimate interest in providing and promoting the game.
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-600">5. Data Sharing</h3>
+  <p class="mb-4">
+    We do not sell personal data. Data may be shared with trusted partners involved in technical support and advertising under strict confidentiality agreements.
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-600">6. Data Retention</h3>
+  <p class="mb-4">
+    Personal data is retained only as long as necessary for the stated purposes or as required by law.
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-600">7. User Rights</h3>
+  <p class="mb-4">
+    You have the right to access, correct, or request deletion of your personal data. You may also object to or restrict processing under applicable laws.
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-600">8. Security</h3>
+  <p class="mb-4">
+    We use appropriate technical and organizational measures to protect your data from unauthorized access, loss, or misuse.
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6 mb-2 text-purple-600">9. Contact Information</h3>
+  <ul class="mb-6">
+    <li>Email: support@domain.com</li>
+    <li>Phone: +380 (44) 333-78-90</li>
+    <li>Website: <a href="https://domain.com" class="text-blue-600 underline">domain.com</a></li>
+    <li>Legal Address: Ukraine, Kyiv, Mira St., 12, Office 302</li>
+  </ul>
+    </section>
+ 
+</main>
+
+
+
+
+  <footer class="bg-gray-100 text-gray-700 p-6 text-sm">
+    <div class="max-w-5xl mx-auto space-y-4">
+      <h2 class="text-lg font-semibold text-purple-600">Legal Disclaimer</h2>
+      <p>
+        Individual Entrepreneur <strong>[First Name Last Name]</strong>, Taxpayer Identification Number (TIN):
+        <strong>4210876359</strong>, registered in the Unified State Register of Individual Entrepreneurs under No.
+        <strong>312345678912345</strong> dated <strong>March 15, 2025</strong>, has entered into Agreement No.
+        <strong>453-WK</strong> dated <strong>March 15, 2025</strong>, with the mobile app development company
+        <strong>“Ball Sort: Color Puzzle”</strong> — <strong>LLC “Company Name”</strong> — for the provision of
+        promotional services for the application.
+      </p>
+      <p>
+        As part of this cooperation, the individual entrepreneur rents advertising accounts from the agency <strong>Work
+          Step</strong>, which also provides technical support for advertising campaigns.
+      </p>
+      <p class="text-red-600 font-medium">
+        Important Notice:
+      </p>
+      <p>
+        All rights to the game <strong>Ball Sort: Color Puzzle</strong> belong exclusively to its developer. This
+        website is created for <strong>promotional purposes only</strong> and is <strong>not the official website of the
+          game developer</strong>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="venobox.min.js"></script>
+  <script src="custom.js"></script>
+</body>
+
+</html>
