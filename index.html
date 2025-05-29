@@ -40,12 +40,15 @@
       transition: all linear 0.3s;
 
     }
+    .active{
+      color: #fff;
+    }
   </style>
 
 </head>
 
 <body>
-  <div class="navbar bg-base-100 py-5 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white shadow-lg">
+  <div class="navbar fixed top-0 z-40 bg-base-100 py-5 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white shadow-lg">
     <div class="navbar-start">
       <a class=" text-xl "><img src="images/unnamed (1).webp" alt=""></a>
 
@@ -54,22 +57,23 @@
     <div class="navbar-end">
       <ul class=" gap-5 hidden md:flex justify-center text-nowrap items-center text-gray-800 font-bold 
 ">
-        <li><a class="hover:text-white" href="#">Home</a></li>
-        <li><a class="hover:text-white" href="#about">About</a></li>
+        <li><a class="hover:text-white active" href="#">Home</a></li>
+       
         <li>
           <details class="dropdown">
             <summary class=" bg-white text-black px-2 py-1 rounded cursor-pointer">Explore
 
             </summary>
             <ul class="menu dropdown-content bg-purple-400 rounded-box z-1 w-52 shadow-sm">
-              <li><a class="hover:text-white" href="#advantages">Benefits</a></li>
-              <li><a class="hover:text-white" href="#screnshot">Screenshots</a></li>
+               <li><a class="hover:text-white " href="#about">About</a></li>
+              <li><a class="hover:text-white " href="#advantages">Benefits</a></li>
+              <li><a class="hover:text-white " href="#screnshot">Screenshots</a></li>
 
 
-              <li><a class="hover:text-white" href="#reviews">Reviews </a></li>
-              <li><a class="hover:text-white" href="#download"> Download Links </a></li>
-              <li> <a class="hover:text-white" href="#faq_sec">Faq </a></li>
-              <li><a class="hover:text-white" href="#contact">Contacts </a></li>
+              <li><a class="hover:text-white " href="#reviews">Reviews </a></li>
+              <li><a class="hover:text-white " href="#download"> Download Links </a></li>
+              <li> <a class="hover:text-white " href="#faq_sec">Faq </a></li>
+              <li><a class="hover:text-white " href="#contact">Contacts </a></li>
             </ul>
           </details>
         </li>
@@ -77,7 +81,7 @@
 
 
 
-        <li><a class="hover:text-white" href="#">Privacy Policy
+        <li><a class="hover:text-white " href="#">Privacy Policy
 
 
           </a></li>
@@ -134,7 +138,7 @@
     </div>
   </div>
   <section
-    class="relative h-[600px] bg-gradient-to-br from-purple-400 via-pink-500 to-yellow-300 flex items-center justify-center pt-20 overflow-hidden">
+    class="relative mt-26  h-[600px] bg-gradient-to-br from-purple-400 via-pink-500 to-yellow-300 flex items-center justify-center  overflow-hidden">
 
 
     <div class="absolute top-10 text-center z-10">
@@ -315,7 +319,7 @@
           <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center">
             <img src="images/Android_robot.svg" alt="Android" class="w-16 h-16 mb-4" />
             <p class="text-xl font-semibold text-purple-700 mb-4">Download on Android</p>
-            <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full text-lg transition">
+            <a href="https://play.google.com/store/apps/details?id=ball.sort.color.water.puzzle.games" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full text-lg transition">
               Get it on Google Play
             </a>
           </div>
@@ -324,7 +328,7 @@
           <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center">
             <img src="images/Apple_logo_black.svg" alt="iOS" class="w-14 h-14 mb-4" />
             <p class="text-xl font-semibold text-purple-700 mb-4">Download on iOS</p>
-            <a href="#" class="bg-black hover:bg-gray-900 text-white px-5 py-2 rounded-full text-lg transition">
+            <a href="https://apps.apple.com/us/app/ball-sort-color-sort-puzzle/id6670187846" class="bg-black hover:bg-gray-900 text-white px-5 py-2 rounded-full text-lg transition">
               Get it on the App Store
             </a>
           </div>
